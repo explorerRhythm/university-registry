@@ -1,5 +1,4 @@
-const BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
-
+const BASE = "https://university-registry.onrender.com/api";
 async function request(path, options = {}) {
   let res;
   try {
@@ -9,7 +8,7 @@ async function request(path, options = {}) {
       ...options,
     });
   } catch {
-    throw { message: "Can't reach the server. Check that the backend is running on port 5000." };
+    throw { message: `Can't reach the server at ${BASE}. If it was idle, wait a minute and reload.` };
   }
   const body = await res.json().catch(() => ({}));
   if (!res.ok) throw { message: body.error || "Request failed", errors: body.errors };
