@@ -2,7 +2,7 @@
 
 A full-stack web app for managing university student records. Add, edit, delete and filter students by name, ID, faculty, course and admission year. It comes pre-loaded with 84 sample students across 6 faculties and 16 courses.
 
-**Live demo:** https://YOUR-VERCEL-ADDRESS.vercel.app
+**Live demo:** https://university-registry.vercel.app/
 *(The backend runs on a free host that sleeps when idle, so the first load after a quiet period can take about a minute.)*
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=nextdotjs)
