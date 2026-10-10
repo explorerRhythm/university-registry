@@ -106,8 +106,8 @@ export default function Home() {
       <header className="bg-ink text-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-5 sm:px-6">
           <div>
-            <p className="font-display text-xl font-semibold leading-tight">Meridian University</p>
-            <p className="text-sm text-white/65">Office of the Registrar</p>
+            <p className="font-display text-xl font-semibold leading-tight">UniVault</p>
+            <p className="text-sm text-white/65">Database for all people on Earth</p>
           </div>
           <button onClick={() => setModal({})} disabled={!meta} className="btn bg-marigold text-ink hover:bg-[#E6A91A]">
             Add student
