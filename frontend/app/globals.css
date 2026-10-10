@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { background: #F2F4F7; }
+  body { @apply font-sans text-ink antialiased; }
+  :focus-visible { outline: 2px solid #1F4FD8; outline-offset: 2px; }
+}
+
+@layer components {
+  .field {
+    @apply w-full rounded-md border border-line bg-white px-3 py-2 text-sm text-ink
+           placeholder:text-slate/70 focus:border-signal focus:outline-none focus:ring-2 focus:ring-signal/20
+           disabled:bg-paper disabled:text-slate;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50;
+  }
+  .btn-primary { @apply btn bg-signal text-white hover:bg-[#1A43BA]; }
+  .btn-ghost { @apply btn border border-line bg-white text-ink hover:bg-paper; }
+  .btn-danger { @apply btn bg-[#B42318] text-white hover:bg-[#912018]; }
+}
+
+/* A freshly added row glows once, then settles. */
+@keyframes settle {
+  from { background-color: #FCE9B8; }
+  to   { background-color: transparent; }
+}
+.row-new { animation: settle 2.4s ease-out 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .row-new { animation: none; }
+}
