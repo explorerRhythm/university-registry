@@ -52,3 +52,4 @@ Student IDs follow `YEAR-COURSECODE-NNN`, e.g. `2022-CSE-014`, and must be uniqu
 - **`ER_ACCESS_DENIED_ERROR`** – wrong `DB_USER` / `DB_PASSWORD` in `backend/.env`.
 - **CORS error** – `CLIENT_ORIGIN` in `backend/.env` must match the URL of the frontend.
 - Re-run `npm run db:setup` any time to reset the data (it drops and recreates the tables).
+# university-registry
